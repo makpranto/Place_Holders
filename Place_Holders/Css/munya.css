@@ -1,0 +1,345 @@
+@font-face{
+  font-family:'LightSans';
+  src:url(../fonts/OpenSans-Light.ttf);
+}
+@font-face{
+  font-family: 'Curly';
+  src:url(../fonts/Engagement-Regular.ttf);
+}
+
+@font-face{
+  font-family: 'SemiBoldSans';
+  src:url(../fonts/OpenSans-Semibold.ttf);
+}
+
+@font-face{
+  font-family: 'Mons';
+  src:url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face{
+  font-family: 'RegMons';
+  src:url(../fonts/Montserrat-Regular.ttf);
+}
+
+
+
+body {
+  line-height: 1;
+  font-family: 'LightSans', sans-serif;
+}
+
+
+
+nav ul {
+  list-style: none;
+}
+
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.customform{
+  display: block;
+  width: 90%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.custombutton{
+  color: #333333;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.bannerImageReduced{
+  width: 100%;
+  height: 250px;
+  background-image: url("../images/image1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thebannerTextReduced{
+  color: #fff;
+  font-family: 'Mons', sans-serif;
+  padding-top:100px;
+  font-size: 40px;
+  text-shadow: 10px 10px 20px #254441;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #254441;
+}
+
+nav ul {
+  float: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: right;
+  background-color: #254441;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+#logo {
+  display: block;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+
+nav { margin: 0; }
+
+.toggle + a,
+ .menu { display: none; }
+
+.toggle {
+  display: block;
+  background-color: #254441;
+  padding: 0 20px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  border: none;
+}
+
+nav ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul .toggle,
+ nav ul ul a { padding: 0 40px; }
+
+nav ul ul ul a { padding: 0 80px; }
+
+nav a:hover,
+ nav ul ul ul a { background-color: #000000; }
+
+nav ul li ul li .toggle,
+ nav ul ul a { background-color: #212121; }
+
+nav ul ul {
+  float: none;
+  position: static;
+  color: #ffffff;
+}
+
+nav ul ul li:hover > ul,
+nav ul li:hover > ul { display: none; }
+
+nav ul ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul ul li { position: static;
+
+}
+}
+
+@media all and (max-width : 330px) {
+nav ul li {
+  display: block;
+width: 94%;
+}
+}
+/*  SECTIONS  ============================================================================= */
+
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+/*.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */*/
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+}
+
+/**/
+
+/*  GRID OF TWELVE   ============================================================================= */
+
+.span_12_of_12 {
+  width: 100%;
+}
+
+.span_11_of_12 {
+  width: 90%;
+}
+
+.span_10_of_12 {
+  width: 82%;
+}
+
+.span_9_of_12 {
+  width: 73%;
+}
+
+.span_8_of_12 {
+  width: 65%;
+}
+
+.span_7_of_12 {
+  width: 56%;
+}
+
+.span_6_of_12 {
+  width: 48%;
+}
+
+.span_5_of_12 {
+  width: 39%;
+}
+
+.span_4_of_12 {
+  width: 31%;
+}
+
+.span_3_of_12 {
+  width: 22%;
+}
+
+.span_2_of_12 {
+  width: 14%;
+}
+
+.span_1_of_12 {
+  width: 5%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .span_12_of_12 {
+    width: 100%;
+  }
+  .span_11_of_12 {
+    width: 100%;
+  }
+  .span_10_of_12 {
+    width: 100%;
+  }
+  .span_9_of_12 {
+    width: 100%;
+  }
+  .span_8_of_12 {
+    width: 100%;
+  }
+  .span_7_of_12 {
+    width: 100%;
+  }
+  .span_6_of_12 {
+    width: 100%;
+  }
+  .span_5_of_12 {
+    width: 100%;
+  }
+  .span_4_of_12 {
+    width: 100%;
+  }
+  .span_3_of_12 {
+    width: 100%;
+  }
+  .span_2_of_12 {
+    width: 100%;
+  }
+  .span_1_of_12 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+.general {
+	text-decoration: underline;
+	color: blue;
+}
+p {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.navba {
+	display: flex;
+	 flex-wrap: wrap;
+  	justify-content: center;
+	}
+.wrapper {
+	display: flex;
+	flex-direction: row;
+
+}
+.learn {
+	text-decoration: underline;
+	color: red;
+}
+.div {
+	border-left: black solid 1px;
+	border-spacing: 20px;
+}
+
+@media only screen and (max-width: 740px) {
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.div {
+		border-left: none;
+	}
+	.intro {
+	margin-top: 50px;
+}
+
+.footer{
+	margin-top: 600px;
+
+}
+img{
+	width: 200px;
+	height: 200px;
+}
+}

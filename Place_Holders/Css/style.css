@@ -1,0 +1,67 @@
+body{
+  background-image: url("../Images/shattered.png");
+  background-attachment: fixed;
+	/*text-shadow: 1px 1px 1px grey; */
+}
+@-ms-viewport {
+  width: device-width;
+}
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: darkcyan;
+  text-align: center;
+  border: 4px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+  background-size: cover;
+}
+
+form {
+  width: 30%;
+  margin: 5px auto;
+  padding: 20px;
+  //border: 4px solid #B0C4DE;
+  //border-radius: 0px 0px 10px 10px;
+  //border-bottom: none;
+}
+
+.fields {
+  //margin: 10px 0px 10px 0px;
+      display: block;
+  width: 90%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+input, select {
+  vertical-align: middle;
+}
+
+
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: darkcyan;
+  border: none;
+  border-radius: 5px;
+}
+.bt {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  background: cyan;
+  border: none;
+  border-radius: 5px;
+}
+

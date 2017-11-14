@@ -1,0 +1,33 @@
+
+* {
+    margin: 5px;
+    padding: 0px
+}
+.navba{
+  list-style: none;
+  padding: 1.3%;
+  background-color: darkcyan;
+  display:flex;
+  justify-content: center;
+
+
+}
+li {
+    font-weight: bold;
+    color: black;
+}
+.sidething {
+  /*border-right: solid darkcyan 3px;*/
+  border-left: solid darkcyan 3px;
+}
+.gratitude{
+  text-align: right;
+}
+.btn2{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: red;
+  border: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,17 @@
+.images{
+  width:3%;
+  height: 3%;
+  min-width: 20px;
+  min-height: 20px;
+}
+.co {
+  color: darkcyan;
+  background-color: black;
+  padding: 5%;
+}
+*{
+  text-decoration: none;
+}
+.com {
+  color: darkcyan;
+}
